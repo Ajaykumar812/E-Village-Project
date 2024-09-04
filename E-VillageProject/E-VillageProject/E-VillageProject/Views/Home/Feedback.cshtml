@@ -1,0 +1,90 @@
+﻿
+@{
+    ViewBag.Title = "Feedback";
+}
+
+<!--<-->@*div class="home_backg container">
+    <div class="row">
+        <div class="col-md-1">
+        </div>
+
+        <div class="col-md-10">
+
+        </div>
+        <div class="col-md-1">
+        </div>
+    </div>*@
+<!--</div>-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+
+
+            <img src="~/Content/Emage/R.jpeg" class="card-img-top">
+
+
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+
+
+            <h2>Google Map Location</h2>
+            <br />
+
+
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7088.185420975708!2d82.96728518888037!3d27.341569905576108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3996de69c4e16949%3A0xf3d48c128016227c!2sBel%20Garha%2C%20Uttar%20Pradesh%20272204!5e0!3m2!1sen!2sin!4v1693856001490!5m2!1sen!2sin" width="100%" height="250" style="border:2px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+        </div>
+        <div class="col-md-6">
+
+
+            <h2>Feedback Form</h2>
+            <br />
+            <form action="/home/feedback" method="post">
+                <input name="Name" type="text" class="form form-control" placeholder="Name" required /><br />
+                <input name="Email" type="email" class="form form-control" placeholder="E-mail" required /><br />
+                <textarea name="Feedback" class="form form-control" placeholder="Leave your message here ..." rows="3" required></textarea><br />
+                <input type="submit" class="form form-control bg-success w-25" />
+            </form>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+@*<div class="container home_contact p-5">
+    <div class="row text-center">
+        <div class="col-md-6">
+            <h2>Google Map Location</h2>
+            <br />
+
+
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7088.185420975708!2d82.96728518888037!3d27.341569905576108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3996de69c4e16949%3A0xf3d48c128016227c!2sBel%20Garha%2C%20Uttar%20Pradesh%20272204!5e0!3m2!1sen!2sin!4v1693856001490!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+        <div class="col-md-6">
+            <h2>Feedback Form</h2>
+            <br />
+            <form action="/home/feedback" method="post">
+                <input name="Name" type="text" class="form form-control" placeholder="Name" required /><br />
+                <input name="Email" type="email" class="form form-control" placeholder="E-mail" required /><br />
+                <textarea name="Feedback" class="form form-control" placeholder="Leave your message here ..." rows="3" required></textarea><br />
+                <input type="submit" class="form form-control bg-success w-25" />
+            </form>
+        </div>
+
+
+    </div>
+</div>*@

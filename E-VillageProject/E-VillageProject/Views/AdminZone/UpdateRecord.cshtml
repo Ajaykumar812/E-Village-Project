@@ -1,0 +1,225 @@
+﻿
+@{
+    ViewBag.Title = "UpdateRecord";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<br />
+<br />
+<br />
+
+<section class="h-100 bg-orange">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col">
+                <div class="card card-registration my-4">
+                    <div class="row g-0">
+                        <div class="col-xl-6 d-none d-xl-block">
+                            <img src="https://mdbootstrap.com/img/Photos/new-templates/bootstrap-registration/img4.webp"
+                                 alt="Sample photo"
+                                 class="img-fluid"
+                                 style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="card-body p-md-5 text-black">
+                                <h3 class="mb-5 text-uppercase">Student registration form</h3>
+
+                                <form action="/AdminZone/UpdateRecord" method="post" enctype="multipart/form-data">
+                                    <input type="hidden" name="EmailID" value="@Model.EmailID" />
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-outline">
+                                                <input type="text" id="form3Example1m" class="form-control form-control-lg" value="@Model.First_name" name="First_name" />
+                                                <label class="form-label" for="form3Example1m">First name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-outline">
+                                                <input type="text" id="form3Example1n" class="form-control form-control-lg" value="@Model.Last_name" name="Last_name" />
+                                                <label class="form-label" for="form3Example1n">Last name</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-outline">
+                                                <input type="text" id="form3Example1m1" class="form-control form-control-lg" value="@Model.Mothers_name"*@ name="Mothers_name" />
+                                                <label class="form-label" for="form3Example1m1">Mother's name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-outline">
+                                                <input type="text" id="form3Example1n1" class="form-control form-control-lg" value="@Model.Father_name"*@ name="Father_name" />
+                                                <label class="form-label" for="form3Example1n1">Father's name</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-outline mb-4">
+                                        <input type="text" id="form3Example8" class="form-control form-control-lg" value="@Model.Address"*@ name="Address" />
+                                        <label class="form-label" for="form3Example8">Address</label>
+                                    </div>
+                                    <div class="form-outline mb-4">
+                                        <input type="text" id="form3Example8" class="form-control form-control-lg" value="@Model.Permanent_Address"*@ name="Permanent_Address" />
+                                        <label class="form-label" for="form3Example8">Permanent Address</label>
+                                    </div>
+                                    Gender@{
+
+                                        string Gender = Model.Gender.ToString();
+                                        if (Gender == "Male")
+                                        {
+                                            <input type="radio" name="Gender" value="Male" checked="checked" />
+                                            <span>Male</span>
+                                            <input type="radio" name="Gender" value="FeMale" />
+                                            <span>FeMale</span>
+                                        }
+                                        else
+                                        {
+                                            <input type="radio" name="Gender" value="feMale" checked="checked" />
+                                            <span>FeMale</span>
+                                            <input type="radio" name="Gender" value="FeMale" />
+                                            <span>Male</span>
+                                        }
+                                    }
+
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+
+                                            <select class="select" value="@Model.State" name="State">
+                                                <option value="">State</option>
+                                                <option value="1">Delhi</option>
+
+                                                <option value="2">Andhra Pradesh</option>
+                                                <option value="3">Arunachal Pradesh</option>
+                                                <option value="4">Assam</option>
+                                                <option value="5">Bihar</option>
+                                                <option value="6">Chhattisgarh</option>
+                                                <option value="7">Goa</option>
+                                                <option value="8">Gujarat</option>
+                                                <option value="9">Haryana</option>
+                                                <option value="10">Himachal Pradesh</option>
+                                                <option value="11">Jharkhand</option>
+                                                <option value="12">Karnataka</option>
+                                                <option value="13">Kerala</option>>
+                                                <option value="14">Madhya Pradesh</option>>
+                                                <option value="15">Maharashtra</option>>
+                                                <option value="16">Manipur</option>>
+                                                <option value="17">Meghalaya</option>
+                                                <option value="18">Meghalaya</option>
+                                                <option value="19">Meghalaya</option>
+                                                <option value="20">Mizoram</option>
+                                                <option value="21">Nagaland</option>
+                                                <option value="22">Odisha</option>
+                                                <option value="23">Punjab</option>
+                                                <option value="24">Rajasthan</option>
+                                                <option value="25">Sikkim</option>
+                                                <option value="26">Tamil Nadu</option>
+                                                <option value="27">Telangana</option>
+                                                <option value="28">Tripura</option>
+                                                <option value="29">Uttar Pradesh</option>
+                                                <option value="30">Uttarakhand</option>
+                                                <option value="3">West Bengal</option>
+
+
+
+                                            </select>
+
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+
+                                            <select class="select" value="@Model.City" name="City">
+                                                <option value="" City>City</option>
+                                                <option value="1">Mumbai</option>
+                                                <option value="2">Delhi</option>
+                                                <option value="3">Bangalore</option>
+                                                <option value="4">Hyderabad</option>
+                                                <option value="5">Hyderabad</option>
+                                                <option value="6">Hyderabad</option>
+                                                <option value="5">Hyderabad</option>
+                                                <option value="5">Hyderabad</option>
+                                                <option value="5">Hyderabad</option>
+                                                <option value="5">Hyderabad</option>
+                                                <option value="5">Hyderabad</option>
+                                                <option value="5">Hyderabad</option>
+                                                <option value="5">Hyderabad</option>
+                                                <option value="5">Hyderabad</option>
+                                                <option value="5">Hyderabad</option>
+                                                <option value="5">Hyderabad</option>
+                                                <option value="5">Hyderabad</option>
+                                                <option value="5">Hyderabad</option>
+                                                <option value="5">Hyderabad</option>
+                                                <option value="5">Hyderabad</option>
+                                                <option value="5">Hyderabad</option>
+                                                <option value="5">Hyderabad</option>
+                                                <option value="5">Hyderabad</option>
+                                                <option value="5">Hyderabad</option>
+                                                <option value="5">Hyderabad</option>
+                                                <option value="5">Hyderabad</option>
+                                                <option value="5">Hyderabad</option>
+                                                <option value="5">Hyderabad</option>
+                                                <option value="5">Hyderabad</option>
+                                                <option value="5">Hyderabad</option>
+                                            </select>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="form-outline mb-4">
+                                        <input type="date" id="form3Example9" value="@Model.DOB" class="form-control form-control-lg" name="DOB" />
+                                        <label class="form-label" for="form3Example9">DOB</label>
+                                    </div>
+
+                                    <div class="form-outline mb-4">
+                                        <input type="number" id="form3Example90" class="form-control form-control-lg" value="@Model.Contactno" name="Contactno" />
+                                        <label class="form-label" for="form3Example90">Contact no</label>
+                                    </div>
+                                    <input type="email" name="EmailId" value="@Model.EmailID" /><br />
+                                    <img src="~/Content/images/@Model.Profile" height="40" width="40" />
+                                    <br />
+                                    <!--file uplode-->
+                                    <div class="form-outline mb-4">
+                                        <input type="file" id="form3Example9" *@ class="form-control form-control-lg" value="@Model.Profile" *@ name="Profile" />
+                                        <label class="form-label" for="form3Example9">Uplode photo</label>
+                                    </div>
+                                    <!--End file-->
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-outline">
+                                                <input type="password" id="form3Example99" *@ class="form-control form-control-lg" value="@Model.Password" *@ name="Password" />
+                                                <label class="form-label" for="form3Example99"> password</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-outline">
+                                                <input type="password" id="form3Example97" *@ class="form-control form-control-lg" value="@Model.ConfirmPassword" *@ name="ConfirmPassword" />
+                                                <label class="form-label" for="form3Example97"> confirm password </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="d-flex justify-content-end pt-3">
+
+                                        <button type="reset" class="btn btn-light btn-lg">Reset all</button>
+
+
+                                        <button type="submit" class="btn btn-warning btn-lg ms-2">Submit form</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DEMOVT24ModelStoreContainer" CdmEntityContainer="DEMOVT24Entities">
+    <EntitySetMapping Name="tbl_admin_login">
+      <EntityTypeMapping TypeName="DEMOVT24Model.tbl_admin_login">
+        <MappingFragment StoreEntitySet="tbl_admin_login">
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_contact">
+      <EntityTypeMapping TypeName="DEMOVT24Model.tbl_contact">
+        <MappingFragment StoreEntitySet="tbl_contact">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Mobile_No" ColumnName="Mobile_No" />
+          <ScalarProperty Name="E_mail" ColumnName="E_mail" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Contactdate" ColumnName="Contactdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_donation1">
+      <EntityTypeMapping TypeName="DEMOVT24Model.tbl_donation1">
+        <MappingFragment StoreEntitySet="tbl_donation1">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_feedback">
+      <EntityTypeMapping TypeName="DEMOVT24Model.tbl_feedback">
+        <MappingFragment StoreEntitySet="tbl_feedback">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="E_mail" ColumnName="E_mail" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="feedbackdate" ColumnName="feedbackdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_registration">
+      <EntityTypeMapping TypeName="DEMOVT24Model.tbl_registration">
+        <MappingFragment StoreEntitySet="tbl_registration">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="First_name" ColumnName="First_name" />
+          <ScalarProperty Name="Last_name" ColumnName="Last_name" />
+          <ScalarProperty Name="Mothers_name" ColumnName="Mothers_name" />
+          <ScalarProperty Name="Father_name" ColumnName="Father_name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Permanent_Address" ColumnName="Permanent_Address" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="Contactno" ColumnName="Contactno" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="Profile" ColumnName="Profile" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="ConfirmPassword" ColumnName="ConfirmPassword" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Regdate" ColumnName="Regdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_signup">
+      <EntityTypeMapping TypeName="DEMOVT24Model.tbl_signup">
+        <MappingFragment StoreEntitySet="tbl_signup">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Your_Name" ColumnName="Your_Name" />
+          <ScalarProperty Name="Your_email" ColumnName="Your_email" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="Repeat_password" ColumnName="Repeat_password" />
+          <ScalarProperty Name="signdate" ColumnName="signdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

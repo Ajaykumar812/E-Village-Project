@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "donation";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@model List<E_VillageProject.Models.tbl_donation1>
+<div class="row">
+    <table class="table table-bordered" style="background:linear-gradient(gold,green)">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Mobile</th>
+            <th>Email</th>
+            <th>Message</th>
+            <th>Insert</th>
+            <th>Delete</th>
+            <th>Update</th>
+
+        </tr>
+        @foreach (var x in Model)
+        {
+            <tr>
+                <td>@x.id</td>
+
+
+                <td>@x.Name</td>
+                <td>@x.Mobile</td>
+                <td>@x.Email</td>
+                <td>@x.Message</td>
+                <td><a href=""><span style="font-size:40px;color:green" class="fa fa-plus"></span></a></td>
+                <td><a href="/AdminZone/Deletedonation?m=@x.Email"><span style="font-size:40px;color:red" class="fa fa-trash"></span></a></td>
+                <td><a href="/AdminZone/UpdateRecorddonation?U=@x.Email"><span style="font-size:40px;color:green" class="fa fa-edit"></span></a></td>
+
+            </tr>
+        }
+    </table>
+    </div>
+

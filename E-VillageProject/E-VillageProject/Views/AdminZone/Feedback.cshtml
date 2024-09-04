@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Feedback";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@model List<E_VillageProject.Models.tbl_feedback>
+<div class="row">
+    <table class="table table-bordered" style="background:linear-gradient(gold,green)">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+
+            <th>Email</th>
+            <th>Message</th>
+      
+        </tr>
+        @foreach (var x in Model)
+        {
+            <tr>
+                <td>@x.Id</td>
+           
+
+                <td>@x.Name</td>
+                <td>@x.E_mail</td>
+                <td>@x.Message</td>
+            </tr>
+        }
+    </table>
+</div>
